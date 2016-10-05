@@ -234,3 +234,15 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 60px;
 	color: white;
 }
+    .overlay-light:before {
+        background-color: rgba(255,255,255,0.4);
+    }
+        .overlay-dark:before, .overlay-dark20:before, .overlay-dark30:before, .overlay-dark40:before, .overlay-dark60:before, .overlay-dark80:before, .overlay-dark90:before, .overlay-light:before, .overlay-light80:before {
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        z-index: -1;
+    }
