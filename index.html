@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,7 +43,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="#aboutwrap">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -60,8 +62,8 @@
         </div> <!-- /container -->
     </div><!--/headerwrap -->
 
-    <section id="works"></section>
-    <div class="container">
+
+    <div class="container" id="recentProjects"> <!-- Projects -->
         <div class="row centered mt mb">
             <h1>Recent Projects</h1>
 
@@ -85,7 +87,7 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 gallery">
                 <div class="hovereffect3">
-                    <img src="assets/img/portfolio/codePhoto.jpg" class="img-responsive">
+                    <img src="assets/img/portfolio/FIFATrivia.jpg" class="img-responsive">
                     <div class="overlay3">
                         <h2>FIFA Trivia Game</h2>
                         <a class="info" href="https://github.com/crisr10/FIFA-Trivia-Game" target="_blank">Github Link</a>
@@ -94,6 +96,48 @@
             </div>
         </div><!--/row -->
     </div><!--/container -->
+
+      <div id="aboutwrap">
+       <div class="container">
+         <div class="row">
+          <div class="col-lg-6 col-lg-offset-3">
+          </div>
+        </div><!--/row -->
+      </div> <!-- /container -->
+    </div><!--/aboutwrap -->
+
+    <div class="container">
+      <div class="row centered mt mb">
+       <div class="col-lg-8 col-lg-offset-2">
+        <h2>ABOUT ME</h2>
+        <p> Initially a self-taught coder, I decided to join UCLA Extension's Coding Bootcamp after working 3 years in the entertainment industry. As competition continues to arise within the field, I realized that becoming a developer would not only expand my industry skills but allow me to become location independent-giving me the fredom to explore the world while doing what I love.
+          <br >I want to ultimately be able to play an important role in the preservation of wild life. I'm currently gathering information for an Africa trip, where I will be able to work directly with Rhinos, Elephants, and other endargered species.</p>
+        </div>
+
+      </div><!--/row -->
+    </div><!--/container -->
+
+    <div class="skills">
+      <div class='container'>
+        <div class="row centered">
+          <h2>SKILLS</h2>
+          <br><br>
+          <div class="col-lg-3">
+            <i class="devicon-css3-plain devicon"></i>
+          </div>
+          <div class="col-lg-3">
+            <i class="devicon-gitlab-plain-wordmark devicon"></i>
+          </div>
+          <div class="col-lg-3">
+            <i class="devicon-html5-plain-wordmark devicon"></i>
+          </div>
+          <div class="col-lg-3">
+            <i class="devicon-javascript-plain devicon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div id="social">
         <div class="container">
@@ -132,5 +176,38 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+       var scroll_start = 0;
+       var startchange = $('#headerwrap');
+       var offset = startchange.offset();
+       if (startchange.length){
+         $(document).scroll(function() {
+          scroll_start = $(this).scrollTop();
+          if(scroll_start > offset.top) {
+            $(".navbar-default").css('background-color', 'transparent');
+          }
+         });
+        }
+      });
+
+      $(document).ready(function(){
+       var scroll_start = 0;
+       var startchange = $('#recentProjects');
+       var offset = startchange.offset();
+       if (startchange.length){
+         $(document).scroll(function() {
+          scroll_start = $(this).scrollTop();
+          if(scroll_start > offset.top) {
+            $(".navbar-default").css('background-color', '#ffffff');
+          }
+         });
+        }
+      });
+    </script>
   </body>
 </html>
+
+
+
+

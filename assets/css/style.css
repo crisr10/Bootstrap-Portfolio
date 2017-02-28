@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default {
-	background-color: #FFFFFF;
+	background-color: transparent;
 	border-color: transparent;
 }
 
@@ -101,13 +101,14 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/back.jpg) no-repeat center top;
+	background: url(../img/wallpaperNature.jpg) no-repeat center top;
+  background-image: cover;
 	margin-top: -70px;
-	padding-top: 250px;
+	padding-top: 330px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+  min-height: 870px;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -159,41 +160,6 @@ h1, h2, h3, h4, h5, h6 {
 #footerwrap p {
 	color: #f2f2f2;
 	margin-left: 10px;
-}
-
-#workwrap {
-	background: url(../img/work.jpg) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 650px;
-	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#workwrap h1 {
-	color:#ffffff;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	letter-spacing: 4px;
-	font-size: 80px;
-	font-weight: bold;
-}
-
-#workwrap h4 {
-	font-weight: 400;
-	color: #ffffff
 }
 
 #aboutwrap {
@@ -505,3 +471,16 @@ transition-delay:.2s;
         content: "";
         z-index: -1;
     }
+
+.devicon {
+  font-size:70px;
+}
+
+#social {
+  margin-top:50px;
+}
+
+
+
+
+
