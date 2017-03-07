@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #aboutwrap {
-	background: url(../img/about.jpg) no-repeat center top;
+	background: url(../img/aboutBW.jpg) no-repeat center top;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: relative;
@@ -453,24 +453,6 @@ transition-delay:.2s;
 /*-----------------------------------------------------*/
 /*-----------------------------------------------------*/
 
-#skillswrap {
-	background: #2c3e50;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	color: white;
-}
-    .overlay-light:before {
-        background-color: rgba(255,255,255,0.4);
-    }
-        .overlay-dark:before, .overlay-dark20:before, .overlay-dark30:before, .overlay-dark40:before, .overlay-dark60:before, .overlay-dark80:before, .overlay-dark90:before, .overlay-light:before, .overlay-light80:before {
-        left: 0;
-        top: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        content: "";
-        z-index: -1;
-    }
 
 .devicon {
   font-size:70px;
