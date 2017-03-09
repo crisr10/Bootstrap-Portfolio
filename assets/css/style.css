@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #headerwrap {
 	background: url(../img/wallpaperNature.jpg) no-repeat center top;
+  background: transparent;
   background-image: cover;
 	margin-top: -70px;
 	padding-top: 330px;
@@ -164,6 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #aboutwrap {
 	background: url(../img/aboutBW.jpg) no-repeat center top;
+  background: transparent;
 	padding-top: 250px;
 	text-align:center;
 	background-attachment: relative;
@@ -460,6 +462,12 @@ transition-delay:.2s;
 
 #social {
   margin-top:50px;
+}
+
+/*PARALLAX ATTRIBUTES*/
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
 
 
