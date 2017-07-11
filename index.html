@@ -4,8 +4,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
 
     <title>CRISTIAN Portfoilo</title>
 
@@ -26,10 +25,10 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#mainNavBar">
 
     <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav id="mainNavBar" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -49,7 +48,7 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </div>
+    </nav>
 
     <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="https://s3-us-west-1.amazonaws.com/powr/defaults/image-slider2.jpg"></div> -->
 
@@ -68,7 +67,7 @@
     </div><!--/headerwrap -->
 
 
-    <div class="container" id="recentProjects"> <!-- Projects -->
+    <div id="recentProjects" class="container"> <!-- Projects -->
         <div class="row centered mt mb">
             <h1>Recent Projects</h1>
 

@@ -9,9 +9,9 @@ $(document).ready(function(){
 			scroll_start = $(this).scrollTop();
 			if(scroll_start > offset.top) {
 				$(".navbar-default").css('background-color', 'transparent');
-			}
+			};
 		});
-	}
+	};
 });
 
 $(document).ready(function(){
@@ -25,13 +25,14 @@ $(document).ready(function(){
 				$(".navbar-default").css('background-color', '#ffffff');
 			}
 		});
-	}
+	};
 });
 
 $('.parallax-window').parallax({imageSrc: 'assets/img/wallpaperNature.jpg'});
 
 $('.parallax-window-about').parallax({imageSrc: 'assets/img/aboutBW.jpg'});
 
+// $('body').scrollspy({ target: '.navbar-default' });
 
 
 
